@@ -1,0 +1,32 @@
+_schema-version: "3.2"
+ID: test
+version: 0.0.1
+modules:
+- name: test-approuter
+  type: approuter.nodejs
+  path: test-approuter
+  requires:
+  - name: destination_approuter
+  - name: test_html_repo_runtime
+  - name: uaa_test
+  parameters:
+    disk-quota: 256M
+    memory: 256M
+resources:
+- name: test_html_repo_runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: uaa_test
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: test-xsuaa-service
+    service-plan: application
+- name: destination_approuter
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: destination
+    service-plan: lite

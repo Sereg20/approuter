@@ -1,0 +1,10 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/test/(.*)$",
+      "target": "$1",
+      "destination": "Mockable"
+    }
+  ]
+}
