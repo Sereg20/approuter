@@ -7,6 +7,7 @@ modules:
   path: test-approuter
   requires:
   - name: destination_approuter
+  - name: connectivity_approuter
   - name: test_html_repo_runtime
   - name: uaa_test
   parameters:
@@ -29,4 +30,9 @@ resources:
   type: org.cloudfoundry.managed-service
   parameters:
     service: destination
+    service-plan: lite
+- name: connectivity_approuter
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: connectivity
     service-plan: lite

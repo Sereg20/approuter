@@ -1,0 +1,128 @@
+{
+    "destinations": [
+        {
+            "name": "US4",
+            "url": "http://US4.dest",
+            "proxyHost": "127.0.0.1",
+			"proxyPort": "8887"
+        }
+    ],
+    "VCAP_SERVICES": {
+        "destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "destination_approuter",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "3d96072d-fe58-4441-8953-356728535867",
+				"instance_name": "destination_approuter",
+				"binding_guid": "283fe223-a0bc-4a8f-b1bc-b6cca4195033",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"token-type": [
+						"xsuaa",
+						"ias"
+					],
+					"clientid": "sb-clone3d96072dfe5844418953356728535867!b548972|destination-xsappname!b62",
+					"credential-type": "binding-secret",
+					"xsappname": "clone3d96072dfe5844418953356728535867!b548972|destination-xsappname!b62",
+					"clientsecret": "283fe223-a0bc-4a8f-b1bc-b6cca4195033$uGgDXwt64d4E0gGhg3MZmT0fXDAtDeYtsZAUNw1kfyY=",
+					"uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+					"url": "https://d4f10610trial.authentication.us10.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"instanceid": "3d96072d-fe58-4441-8953-356728535867",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnPhdOWOHSyOBOzYYdJ2c\nbDgn36z8rgOl+tDylByFUniyb3COAHNOx8d1nI7CKF5iPnmVFK7PajfLQWNd9bDp\nzM2vwuvaMk0zhPNZz6mBvqtLSThd0PIVP942ZVW1h/CLOz1aIyq9qp/nvskl+08C\n9GsHxfKV21susa92u+UbtD98nQHWqZd+k8iT5YEIsLBVOo19J9YYvkMcWPXz2Qhk\nH4epa1kEusmvGa35VFtC/5gjvJFZJjBOmN7kDZhkN0rK1DeUUALMjxfEOrSlAcyN\nGYN+cfJutm0jnvwdx6VBGiGCnOQyBMOPC1rAjG3Ug3bo2VP9SkpPUbaIVtBkgyam\n9QIDAQAB\n-----END PUBLIC KEY-----",
+					"identityzone": "d4f10610trial",
+					"tenantid": "f0a79399-6878-4142-9e25-8b2cf96bddfa"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"connectivity": [
+			{
+				"label": "connectivity",
+				"provider": null,
+				"plan": "lite",
+				"name": "connectivity_approuter",
+				"tags": [
+					"connectivity",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "672e5ff0-600d-41c7-bd28-94bed71cf448",
+				"instance_name": "connectivity_approuter",
+				"binding_guid": "ed62fb8b-d191-4d07-860a-fe1feb6b2391",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"token-type": [
+						"xsuaa",
+						"ias"
+					],
+					"clientid": "sb-clone672e5ff0600d41c7bd2894bed71cf448!b548972|connectivity!b23892",
+					"token_service_domain": "authentication.us10.hana.ondemand.com",
+					"credential-type": "binding-secret",
+					"token_service_url": "https://d4f10610trial.authentication.us10.hana.ondemand.com",
+					"xsappname": "clone672e5ff0600d41c7bd2894bed71cf448!b548972|connectivity!b23892",
+					"onpremise_proxy_ldap_port": "20001",
+					"onpremise_socks5_proxy_port": "20004",
+					"clientsecret": "ed62fb8b-d191-4d07-860a-fe1feb6b2391$PeUb4Tz4-lIo9ZSw1fHEXWkxzJpkYmjCS73oQaieH38=",
+					"onpremise_proxy_http_port": "20003",
+					"url": "https://d4f10610trial.authentication.us10.hana.ondemand.com",
+					"onpremise_proxy_host": "connectivityproxy.internal.cf.us10-001.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"onpremise_proxy_port": "20003",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnPhdOWOHSyOBOzYYdJ2c\nbDgn36z8rgOl+tDylByFUniyb3COAHNOx8d1nI7CKF5iPnmVFK7PajfLQWNd9bDp\nzM2vwuvaMk0zhPNZz6mBvqtLSThd0PIVP942ZVW1h/CLOz1aIyq9qp/nvskl+08C\n9GsHxfKV21susa92u+UbtD98nQHWqZd+k8iT5YEIsLBVOo19J9YYvkMcWPXz2Qhk\nH4epa1kEusmvGa35VFtC/5gjvJFZJjBOmN7kDZhkN0rK1DeUUALMjxfEOrSlAcyN\nGYN+cfJutm0jnvwdx6VBGiGCnOQyBMOPC1rAjG3Ug3bo2VP9SkpPUbaIVtBkgyam\n9QIDAQAB\n-----END PUBLIC KEY-----",
+					"identityzone": "d4f10610trial",
+					"tenantid": "f0a79399-6878-4142-9e25-8b2cf96bddfa",
+					"onpremise_proxy_rfc_port": "20001",
+					"region_configuration_id": "cf-us10-001"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+        "xsuaa": [
+            {
+                "label": "xsuaa",
+                "provider": null,
+                "plan": "application",
+                "name": "test-xsuaa-service",
+                "tags": [
+                    "xsuaa"
+                ],
+                "instance_guid": "e4f57725-7bef-4d7f-9201-3ebda3f43577",
+				"instance_name": "test-xsuaa-service",
+				"binding_guid": "660c66ca-56e4-4102-adb4-a620f693673c",
+				"binding_name": null,
+                "credentials": {
+					"tenantmode": "dedicated",
+					"sburl": "https://internal-xsuaa.authentication.us10.hana.ondemand.com",
+					"subaccountid": "f0a79399-6878-4142-9e25-8b2cf96bddfa",
+					"credential-type": "binding-secret",
+					"clientid": "sb-test!t548972",
+					"xsappname": "test!t548972",
+					"clientsecret": "660c66ca-56e4-4102-adb4-a620f693673c$6m9249ir05xzksGtjnCi1kG_RdCzSkSRTKWNR91D0Gk=",
+					"serviceInstanceId": "e4f57725-7bef-4d7f-9201-3ebda3f43577",
+					"url": "https://d4f10610trial.authentication.us10.hana.ondemand.com",
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnPhdOWOHSyOBOzYYdJ2c\nbDgn36z8rgOl+tDylByFUniyb3COAHNOx8d1nI7CKF5iPnmVFK7PajfLQWNd9bDp\nzM2vwuvaMk0zhPNZz6mBvqtLSThd0PIVP942ZVW1h/CLOz1aIyq9qp/nvskl+08C\n9GsHxfKV21susa92u+UbtD98nQHWqZd+k8iT5YEIsLBVOo19J9YYvkMcWPXz2Qhk\nH4epa1kEusmvGa35VFtC/5gjvJFZJjBOmN7kDZhkN0rK1DeUUALMjxfEOrSlAcyN\nGYN+cfJutm0jnvwdx6VBGiGCnOQyBMOPC1rAjG3Ug3bo2VP9SkpPUbaIVtBkgyam\n9QIDAQAB\n-----END PUBLIC KEY-----",
+					"apiurl": "https://api.authentication.us10.hana.ondemand.com",
+					"identityzone": "d4f10610trial",
+					"identityzoneid": "f0a79399-6878-4142-9e25-8b2cf96bddfa",
+					"tenantid": "f0a79399-6878-4142-9e25-8b2cf96bddfa",
+					"zoneid": "f0a79399-6878-4142-9e25-8b2cf96bddfa"
+				},
+                "syslog_drain_url": null,
+                "volume_mounts": []
+            }
+        ]
+    }
+}

@@ -2,9 +2,14 @@
   "authenticationMethod": "route",
   "routes": [
     {
-      "source": "^/test/(.*)$",
+      "source": "^/mockable/(.*)$",
       "target": "$1",
       "destination": "Mockable"
+    },
+    {
+      "source": "^/onprem/(.*)$",
+      "target": "$1",
+      "destination": "US4"
     }
   ]
 }

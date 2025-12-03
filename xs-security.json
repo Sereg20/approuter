@@ -51,7 +51,9 @@
   "oauth2-configuration": {
     "redirect-uris": [
       "https://**.cfapps.us10-001.hana.ondemand.com/**",
-      "http://localhost:5001/**"
+      "http://localhost:5001/**",
+      "https://**.localhost:5000/**",
+      "https://port5000-workspaces-ws-a3k4w.us10.trial.applicationstudio.cloud.sap/**"
     ]
   }
 
