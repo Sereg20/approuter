@@ -8,17 +8,11 @@ modules:
   requires:
   - name: destination_approuter
   - name: connectivity_approuter
-  - name: test_html_repo_runtime
   - name: uaa_test
   parameters:
     disk-quota: 256M
     memory: 256M
 resources:
-- name: test_html_repo_runtime
-  type: org.cloudfoundry.managed-service
-  parameters:
-    service: html5-apps-repo
-    service-plan: app-runtime
 - name: uaa_test
   type: org.cloudfoundry.managed-service
   parameters:

@@ -44,7 +44,8 @@
       ],
       "attribute-references": [
         "ID", 
-        "Type"
+        "Type",
+        "New"
       ]
     }
   ],
